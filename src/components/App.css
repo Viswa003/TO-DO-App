@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f1f1f1; /* Light gray background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Center content vertically */
+}
+
+.App {
+  text-align: center;
+}
+
+h1 {
+  color: #333; /* Dark text color */
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+}
+
+.TodoWrapper {
+  background: #fff; /* White background */
+  margin-top: 2rem; /* Reduced margin-top */
+  padding: 2rem;
+  border-radius: 10px; /* Increased border radius for rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+.TodoForm {
+  width: 100%;
+  margin-bottom: 1.5rem; /* Increased margin-bottom */
+}
+
+.todo-input {
+  outline: none;
+  background: #f1f1f1; /* Light gray background */
+  border: 1px solid #ccc; /* Light gray border */
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem; /* Reduced margin-bottom */
+  width: 100%;
+  color: #333; /* Dark text color */
+  border-radius: 5px;
+}
+
+.todo-input::placeholder {
+  color: #999; /* Lighter gray placeholder text */
+}
+
+.todo-btn {
+  background: #8758ff;
+  color: #fff;
+  border: none;
+  padding: 0.55rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.todo-btn:hover {
+  background: #6744d1; /* Slightly darker purple on hover */
+}
+
+.Todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  color: #333;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.Todo:hover {
+  background: #f1f1f1; /* Light gray background on hover */
+}
+
+.fa-trash {
+  margin-left: 0.75rem;
+  color: #e74c3c; /* Red color for delete icon */
+  cursor: pointer;
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.fa-trash:hover {
+  color: #c0392b; /* Darker red on hover */
+}
+
+.incompleted {
+  color: #3498db; /* Blue color for incomplete tasks */
+  cursor: pointer;
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.incompleted:hover {
+  color: #2980b9; /* Darker blue on hover */
+}
+
+.completed {
+  color: #27ae60; /* Green color for completed tasks */
+  text-decoration: line-through;
+  cursor: pointer;
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.completed:hover {
+  color: #219d54; /* Darker green on hover */
+}
+
+.edit-icon,
+.delete-icon {
+  cursor: pointer;
+}
+
+.edit-icon:hover,
+.delete-icon:hover {
+  opacity: 0.7; /* Slightly reduce opacity on hover */
+}
